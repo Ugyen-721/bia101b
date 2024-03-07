@@ -21,6 +21,7 @@ print(interpolated)
 
 # ! string methods
 print('String Methods')
+
 # # ! upper
 print('String upper')
 stringlower = 'hello how are you'
