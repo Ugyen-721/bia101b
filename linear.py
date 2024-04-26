@@ -1,38 +1,17 @@
-#searching
-#sorting
 
-# !problem 1
-#input
+def linear_search(arr, target):
 
-user_input = [1,2,3,4,5,6,7,8,9,11]
+    for i in range(len(arr)):
+        if arr[i] == target:
+            return i
+    return -1
 
-# ?Q: Check to see if a certain number exist in the user input array
+list = [0,9,8,7,6,5]
+target = 8
 
-n = 11
-
-#linear search
-
-result = False 
-for e in user_input:
-    if e == n:
-        result = True
-if result == True:
-    print('Found')
+x = linear_search(list, target)
+if x == -1:
+    print(f"Target {target} not found")
 else:
-    print('Not Found')
+    print(f"Target {target} found")
 
-
-#for e in user_input:
-    #if e == n:
-        #print('found')
-   # else:
-      #  print('Not found')
-
-#if else, for loops, print, calculations (+, -)
-    
-# Time: o(n)
-input = [1,2,3,4,5,6,7,8,9,10]
-for i in input:
-    print('hi')
-    if i == 1: #o(1)
-        
